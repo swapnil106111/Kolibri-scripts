@@ -39,6 +39,8 @@ sudo wget  https://download.teamviewer.com/download/teamviewer_i386.deb
 
 sudo dpkg -i teamviewer*.deb
 
+sudo apt update && sudo apt -f install
+
 echo "***setting up nginx...***"
 sudo bash script_2.sh $1
 
