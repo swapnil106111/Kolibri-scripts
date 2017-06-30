@@ -40,6 +40,7 @@ server {
         proxy_set_header Host $http_host;
         proxy_set_header X-Scheme $scheme;
         proxy_set_header X-Real-IP $remote_addr;
+        proxy_http_version 1.1;
         proxy_pass http://kolibri;
         error_page 502 = @502;
     }
@@ -80,6 +81,7 @@ server {
         proxy_set_header Host $http_host;
         proxy_set_header X-Scheme $scheme;
         proxy_set_header X-Real-IP $remote_addr;
+        proxy_http_version 1.1;
         proxy_pass http://kolibri;
         error_page 502 = @502;
     }
