@@ -16,18 +16,10 @@ sudo apt-get update
 echo "***python-pip installation...***"
 sudo apt-get install python-pip
 
-echo "***git installation...***"
-sudo apt-get install git
 
 echo "*** installation***"
 sudo apt-get install nginx
 
-
-echo "***Kolibri-scrips is cloning***"
-git clone https://github.com/swapnil106111/Kolibri-scripts.git
-
-
-cd Kolibri-scripts
 
 echo "***Chrome browser installation***"
 wget -q -O - https://dl-ssl.google.com/linux/linux_signing_key.pub | sudo apt-key add - 
